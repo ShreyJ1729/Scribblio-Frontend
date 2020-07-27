@@ -1,5 +1,6 @@
 import React from 'react';
 import Message from "./Message";
+import ScrollToBottom from 'react-scroll-to-bottom';
 import socket from "../../socket-api";
 
 function MessageDisplay(props) {
@@ -12,9 +13,9 @@ function MessageDisplay(props) {
     });
 
     return (
-        <div className="overflow-auto mx-3" style={{ height: "90%", width: "90%" }}>
+        <ScrollToBottom className="overflow-auto mx-3" style={{ height: "90%", width: "90%" }}>
             {props.messages.map((message, idx) => <Message key={idx} message={message} />)}
-        </div>);
+        </ScrollToBottom>);
 }
 
 export default MessageDisplay;

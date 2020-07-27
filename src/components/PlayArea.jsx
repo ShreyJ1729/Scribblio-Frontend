@@ -3,20 +3,24 @@ import CanvasDraw from "react-canvas-draw";
 import socket from "../socket-api";
 
 function PlayArea(props) {
-    // Disable canvas until server sends a message that it's this user's turn
-    const [canThisUserDraw, setCanThisUserDraw] = useState(true);
+    const [canThisUserDraw, setCanThisUserDraw] = useState(false);
     const [canvasData, setCanvasData] = useState("");
+
+    // Disable canvas until/unless server sends/sent a message that it's this user's turn
     socket.on("drawer-change", newDrawer => {
         if (props.username === newDrawer) {
             setCanThisUserDraw(true);
             console.log("You can draw now!");
         } else {
             setCanThisUserDraw(false);
-            console.log("You can't draw now! Sorry!")
+            console.log("You can't draw now! Sorry!");
+            console.log("New Drawer: " + newDrawer);
+            console.log(props.username);
         }
     })
     socket.on("canvas-change", newCanvasData => {
         console.log("You got some data");
+        console.log(newCanvasData);
         setCanvasData(newCanvasData.data);
     });
 
@@ -26,7 +30,6 @@ function PlayArea(props) {
             console.log("You sent some data");
         }
     }
-    
     return (<div className="col-8">
         <CanvasDraw className="canvas"
             onChange={handleCanvasChange}
@@ -40,7 +43,7 @@ function PlayArea(props) {
             immediateLoading={true}
             saveData={canvasData}
             loadSaveData={null}
-            ref={instance => console.log(instance)}
+            ref={instance => (instance)}
         />
     </div>)
 }

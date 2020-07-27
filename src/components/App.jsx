@@ -7,12 +7,11 @@ import UsersBox from './UserList/UsersBox';
 function App() {
   const [messages, setMessages] = useState([]);
   const [Username, setUsername] = useState("");
+
   return (
     <div>
       <div className="row">
-      {/* This div below will have a list of names of ppl currently connected */}
-        <UsersBox />
-        {/* If canvas is loaded () */}
+        <UsersBox clientUsername={Username}/>
         {!(Username==="") ? <PlayArea username={Username}/> : <div className="col-8"></div>}
         <MessageArea messages={messages} setMessages={setMessages}/>
       </div>
