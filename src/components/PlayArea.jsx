@@ -14,8 +14,7 @@ function PlayArea(props) {
         } else {
             setCanThisUserDraw(false);
             console.log("You can't draw now! Sorry!");
-            console.log("New Drawer: " + newDrawer);
-            console.log(props.username);
+            console.log("New Drawer/Your Name: " + newDrawer + " / " + props.username);
         }
     })
     socket.on("canvas-change", newCanvasData => {

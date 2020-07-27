@@ -28,8 +28,8 @@ function UsersBox(props) {
                 if (user === host) {
                     hostPrefix = "Host: ";
                 }
-                return (usersReady.includes(user) ? <strong><li className="text-success" key={idx}>{hostPrefix}{user}</li></strong>
-                    : <strong><li className="text-danger" key={idx}>{hostPrefix}{user}</li></strong>);
+                return (usersReady.includes(user) ? <li className="text-success" key={idx}><strong>{hostPrefix}{user}</strong></li>
+                    : <li className="text-danger" key={idx}><strong>{hostPrefix}{user}</strong></li>);
             }
             )}
         </ul>
