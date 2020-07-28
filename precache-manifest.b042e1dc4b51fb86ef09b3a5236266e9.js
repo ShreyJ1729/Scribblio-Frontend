@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8a0fb68469ae169c799094832a91d81",
+    "revision": "3d28e9d3a48e11b496337c7a80d3c5c1",
     "url": "/Scribblio-Frontend/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Scribblio-Frontend/static/js/2.a8038533.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60a7f5dc377ee2d51f71",
-    "url": "/Scribblio-Frontend/static/js/main.7c7c420f.chunk.js"
+    "revision": "24f0ffd0da31c4a4d203",
+    "url": "/Scribblio-Frontend/static/js/main.9abd0639.chunk.js"
   },
   {
     "revision": "20cf9439abc7d0267299",
