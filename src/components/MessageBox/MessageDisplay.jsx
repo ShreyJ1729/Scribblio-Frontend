@@ -22,7 +22,7 @@ function MessageDisplay(props) {
 
 
     return (
-        <ScrollToBottom className="overflow-auto mx-3" style={{ height: "90%", width: "90%" }}>
+        <ScrollToBottom className="overflow-auto mx-3">
             {props.messages.map((message, idx) => <Message key={idx} message={message} />)}
         </ScrollToBottom>);
 }
