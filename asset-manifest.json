@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Scribblio-Frontend/static/js/main.7c7c420f.chunk.js",
+    "main.js.map": "/Scribblio-Frontend/static/js/main.7c7c420f.chunk.js.map",
+    "runtime-main.js": "/Scribblio-Frontend/static/js/runtime-main.69412044.js",
+    "runtime-main.js.map": "/Scribblio-Frontend/static/js/runtime-main.69412044.js.map",
+    "static/js/2.a8038533.chunk.js": "/Scribblio-Frontend/static/js/2.a8038533.chunk.js",
+    "static/js/2.a8038533.chunk.js.map": "/Scribblio-Frontend/static/js/2.a8038533.chunk.js.map",
+    "index.html": "/Scribblio-Frontend/index.html",
+    "precache-manifest.b9a77ba3bdf2bb8bc5ebeceb178988e2.js": "/Scribblio-Frontend/precache-manifest.b9a77ba3bdf2bb8bc5ebeceb178988e2.js",
+    "service-worker.js": "/Scribblio-Frontend/service-worker.js",
+    "static/js/2.a8038533.chunk.js.LICENSE.txt": "/Scribblio-Frontend/static/js/2.a8038533.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69412044.js",
+    "static/js/2.a8038533.chunk.js",
+    "static/js/main.7c7c420f.chunk.js"
+  ]
+}
