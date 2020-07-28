@@ -77,7 +77,6 @@ function PlayArea(props) {
 
     useEffect(() => {
         socket.on("round-ended", () => {
-            alert("Cleared INTERVAL!")
             clearInterval(timerID);
             setTimeDisplay(null);
         });
