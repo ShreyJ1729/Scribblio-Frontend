@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import Message from "./Message";
-import ScrollToBottom from 'react-scroll-to-bottom';
+import AutoScroll from 'react-scroll-to-bottom';
 import socket from "../../socket-api";
-
 function MessageDisplay(props) {
 
     useEffect(() => {
@@ -22,9 +21,11 @@ function MessageDisplay(props) {
 
 
     return (
-        <ScrollToBottom className="overflow-auto mx-3">
-            {props.messages.map((message, idx) => <Message key={idx} message={message} />)}
-        </ScrollToBottom>);
+        <div style={{ height: "85%" }}>
+            <AutoScroll className="overflow-auto mx-2" >
+                {props.messages.map((message, idx) => <Message key={idx} message={message} />)}
+            </AutoScroll>
+        </div>);
 }
 
 export default MessageDisplay;

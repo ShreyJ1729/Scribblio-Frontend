@@ -30,6 +30,6 @@ function MessageInputBox(props) {
             autoComplete="off"
             rows="2"
             placeholder="Type To Chat..."
-            style={{ resize: "none", display: "block", margin: "auto", width: "90%" }}></textarea>);
+            style={{ resize: "none", display: "block", margin: "auto", width: "90%", height: "10%" }}></textarea>);
 }
 export default MessageInputBox;

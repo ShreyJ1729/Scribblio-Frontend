@@ -3,6 +3,7 @@ import MessageArea from "./MessageBox/MessageArea"
 import Popup from "./Popup";
 import PlayArea from "./PlayArea";
 import UsersBox from './UserList/UsersBox';
+import "./styles.css";
 
 function App() {
   const [messages, setMessages] = useState([]);
