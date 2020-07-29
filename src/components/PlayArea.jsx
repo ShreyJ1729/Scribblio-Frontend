@@ -9,7 +9,7 @@ function PlayArea(props) {
     const [brushColor, setBrushColor] = useState("000000");
     const [brushSize, setBrushSize] = useState(10);
     const [timeDisplay, setTimeDisplay] = useState(null);
-    const blankCanvasData = '{"lines":[{"points":[{"x":0,"y":0}, {"x":2000,"y":2000}],"brushColor":"#fff","brushRadius":1}],"width":"100%","height":"95%"}';
+    const blankCanvasData = '{"lines":[{"points":[{"x":-100,"y":0}, {"x":-100,"y":0}],"brushColor":"#000","brushRadius":1}],"width":"100%","height":"95%"}';
     const hexCodes = ["FFFFFF", "000000", "C1C1C1", "4C4C4C", "EF130B", "740B07", "FF7100", "C23800", "FFE400", "E8A200", "00CC00", "005510", "00B2FF", "00569E", "231FD3", "0E0865", "A300BA", "550069", "D37CAA", "A75574", "A0522D", "63300D"];
     let timerID = null;
     // Make canvas into an object of {sender, data} and then compare --> if onChange, the latest canvasData sender is not self dont emit
