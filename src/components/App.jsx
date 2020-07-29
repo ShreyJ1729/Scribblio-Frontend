@@ -12,7 +12,7 @@ function App() {
     <div>
       <div className="row">
         <UsersBox clientUsername={Username}/>
-        {!(Username==="") ? <PlayArea username={Username}/> : <div className="col-8"></div>}
+        {(Username!=="") ? <PlayArea username={Username}/> : <div className="col-8"></div>}
         <MessageArea messages={messages} setMessages={setMessages}/>
       </div>
       {(Username==="") && <Popup setUsername={setUsername}/>}
